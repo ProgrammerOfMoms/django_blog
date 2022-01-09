@@ -15,7 +15,9 @@ from pathlib import Path
 
 
 env = environ.Env(
-    DJANGO_DEBUG = (bool, False)
+    DJANGO_DEBUG = (bool, False),
+    EMAIL_USE_TLS = (bool, True),
+    EMAIL_PORT = (int, 587)
 )
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -131,3 +133,9 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+EMAIL_HOST = env("EMAIL_HOST")
+EMAIL_HOST_USER = env("EMAIL_HOST_USER")
+EMAIL_HOST_PASSWORD = env("EMAIL_HOST_PASSWORD")
+EMAIL_USE_TLS = env("EMAIL_USE_TLS")
+EMAIL_PORT = env("EMAIL_PORT")
