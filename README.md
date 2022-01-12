@@ -3,9 +3,11 @@ Blog written with Djnago with book Django2 by Example by Antonio Mele
 
 ## How to run
 - Pull repository and move to project dir
-- Create virtualenv
+- Create virtualenv and run its
 ```python
 python -m venv env
+source venv/bin/activate  # for linux user
+venv/Scripts/activate.bat  # for windows user
 ```
 - Install requirements
 ```python
