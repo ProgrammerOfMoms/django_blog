@@ -7,7 +7,7 @@ Blog written with Djnago with book Django2 by Example by Antonio Mele
 ```python
 python -m venv env
 ```
-- Install requiremets
+- Install requirements
 ```python
 pip install -r requirements.txt
 ```
